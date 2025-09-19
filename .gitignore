@@ -1,0 +1,16 @@
+# ignore .evn file, .vscode folder, node_modules folder, and .DS_Store file
+.env
+.vscode
+node_modules
+.dist
+.txt
+txt
+.DS_Store
+# ignore all files in the node_modules folder
+node_modules
+src/models.txt
+.fleet
+ssl
+src/cert.sh
+uploads
+uploads/*

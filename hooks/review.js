@@ -8,4 +8,4 @@ module.exports = {
     await Recipe.decrement('reviews', { by: 1, where: { hex: review.recipe }, transaction: options.transaction });
     await User.decrement('reviews', { by: 1, where: { username: review.user }, transaction: options.transaction });
   }
-}
+};

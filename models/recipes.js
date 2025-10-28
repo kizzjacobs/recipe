@@ -11,7 +11,7 @@ module.exports = (sequelize, Sequelize, User) => {
     hex: { type: STRING(32), unique: true, allowNull: false },
     chef: { type: STRING(30), allowNull: false, references: { model: User, key: 'username' } },
     name: { type: STRING(500), allowNull: false },
-    description: { type: TEXT, allowNull: true },
+    desc: { type: TEXT, allowNull: true },
     video: { type: STRING(1000), allowNull: true },
     images: { type: ARRAY(STRING(1000)), allowNull: true },
     tags: { type: ARRAY(STRING(100)), allowNull: true },
